@@ -1,0 +1,260 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.banner_area {
+  position: relative;
+
+  .section_title {
+    margin-left: 32px;
+  }
+
+  .banner_container {
+    overflow: hidden;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    width: 100%;
+    height: 900px;
+    position: relative;
+  }
+
+  .banner_text_slider {
+    padding-top: 220px;
+    padding-bottom: 100px;
+    overflow: hidden;
+
+    .info {
+      max-width: 552px;
+
+      .title {
+        @include font(70px, 600);
+        margin-bottom: 26px;
+        line-height: 80px;
+      }
+
+      .subtitle {
+        @include font(20px, 400);
+        color: $para;
+      }
+
+      ul {
+        margin-top: 30px;
+
+        li {
+          @include font(16px, 400);
+          margin-bottom: 10px;
+          position: relative;
+          padding-left: 30px;
+
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: "Font Awesome 6 Free";
+            content: "\f058";
+          }
+        }
+      }
+
+      .banner_btn {
+        margin-top: 40px;
+      }
+    }
+
+  }
+
+  .banner_image_slider {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 830px;
+    overflow: hidden;
+
+    .slider_item {
+      position: relative;
+    }
+
+    .image_overlay {
+      width: 100%;
+      height: 36.5%;
+      background: $primary;
+      opacity: .7;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      mix-blend-mode: multiply;
+    }
+
+    .banner_circle {
+      position: absolute;
+      bottom: -189px;
+      left: 10%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .banner_down_arrow {
+    position: absolute;
+    left: 54.8%;
+    bottom: -25px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 99;
+
+    a {
+      position: relative;
+
+      img {
+        transition: $transition;
+        cursor: pointer;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 40px 20px #fff;
+        border-radius: 50%;
+        animation: 5s linear infinite hero-2-back-top-btn;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: rotateX(360deg);
+      }
+    }
+  }
+
+  @keyframes hero-2-back-top-btn {
+
+    0%,
+    100% {
+      -webkit-box-shadow: 0 0 40px 0 #fff;
+      box-shadow: 0 0 40px 0 #fff
+    }
+
+    50% {
+      -webkit-box-shadow: 0 0 40px 20px #fff;
+      box-shadow: 0 0 40px 20px #fff
+    }
+  }
+
+  .banner_social_icon {
+    position: absolute;
+    top: 50%;
+    left: 2.5vw;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    li.text {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 1;
+      font-weight: 600;
+      letter-spacing: 3.29px;
+      -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+      margin-left: 17px;
+      padding-bottom: 76px;
+      margin-bottom: 30px;
+      position: relative;
+      color: #00071a;
+
+      &::before {
+        position: absolute;
+        width: 1px;
+        height: 45px;
+        background-color: #00071a;
+        content: "";
+        left: 7px;
+        bottom: 0;
+      }
+    }
+
+    a {
+      display: inline-block;
+      background: rgba(255, 56, 56, .15);
+      clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+      width: 48px;
+      color: $primary;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      transition: $transition;
+
+      &:hover {
+        i {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.play_video {
+  .play_btn {
+    margin-right: 12px;
+    transition: $transition;
+    font-size: 18px;
+    width: 52px;
+    height: 52px;
+    line-height: 45px;
+    border: 4px solid $primary;
+    color: $primary;
+    outline: rgba(0, 0, 0, .1019607843) solid 13px;
+    animation: 2s linear infinite play_btn;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 9;
+
+    &::after {
+      transform: scale(0);
+      transition: $transition;
+      border-radius: 50%;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: $gradient;
+      content: "";
+      z-index: -1;
+    }
+
+    &:hover {
+      border-color: transparent;
+      color: $white;
+
+      &::after {
+        transform: scale(1)
+      }
+    }
+
+  }
+
+  .watch {
+    @include font(18px, 600);
+  }
+}
+
+@keyframes play_btn {
+  0% {
+    outline: rgba(17, 17, 17, .6156862745) solid 0
+  }
+
+  100% {
+    outline: rgba(17, 17, 17, 0) solid 13px
+  }
+}

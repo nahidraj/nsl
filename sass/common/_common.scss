@@ -1,0 +1,335 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+  font-family: 'Kanit', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  transition: all 0.3s ease-out 0s;
+}
+
+body {
+  overflow-x: hidden;
+  @include font(16px, 500);
+  font-family: 'Inter', sans-serif;
+  color: $black;
+  line-height: 30px;
+  // margin-bottom: 2000px;
+}
+
+::selection {
+  background-color: $black;
+  color: $white;
+}
+
+p {
+  @include font(18px, 400);
+  color: $para;
+}
+
+// reveal image
+.reveal_image {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: left;
+  }
+}
+
+// reveal text
+
+.reveal_text>div {
+  background: linear-gradient(to right,
+      $black 50%,
+      rgba(77, 81, 95, 0.1) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.reveal_text_white>div {
+  background: linear-gradient(to right,
+      $white 50%,
+      rgba(255, 255, 255, 0.1) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.short_p>div {
+  background: linear-gradient(to right,
+      $para 50%,
+      rgba(77, 81, 95, 0.1) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+// section title
+.section_title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+
+  .title {
+    @include font(16px, 400);
+    // background: $gradient;
+    color: $primary;
+    text-transform: capitalize;
+    background-clip: text;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+
+    span {
+      background: rgba(229, 62, 41, .1);
+      padding: 6px 27px;
+      border-radius: 30px;
+    }
+  }
+
+  .img_1,
+  .img_2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .img_2 {
+    left: -28px
+  }
+
+  .img_1 {
+    right: -28px
+  }
+}
+
+.section_title_main {
+  .title {
+    @include font(56px, 600);
+    line-height: 1.15em;
+  }
+}
+
+// cusror
+.cursor {
+  border-radius: 50%;
+  display: block;
+  position: fixed;
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  background-color: rgba(122, 122, 122, .3);
+  -webkit-transition: -webkit-transform .35s ease-out;
+  transition: transform .35s ease-out;
+  transition: transform .35s ease-out, -webkit-transform .35s ease-out;
+  z-index: 1011
+}
+
+// common btn
+.common_btn {
+  a {
+    color: $white;
+    border-radius: 100px;
+    background: $gradient;
+    padding: 18px 34px;
+    overflow: hidden;
+    @include font(16px, 500);
+    text-transform: uppercase;
+    position: relative;
+    z-index: 9;
+
+    &::after {
+      position: absolute;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, #fff 50%, rgba(0, 0, 0, 0) 100%);
+      left: -100%;
+      transition: .4s linear;
+      opacity: .5;
+      content: "";
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    &:hover {
+      &::after {
+        animation: 1s linear infinite btn_animation;
+      }
+    }
+
+    @keyframes btn_animation {
+      0% {
+        left: -100%
+      }
+
+      100% {
+        left: 100%
+      }
+    }
+
+    span {
+      position: relative;
+      padding-right: 20px;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        content: "";
+        width: 1px;
+        height: 70%;
+        border-right: 1px solid $white;
+        color: $white;
+      }
+
+    }
+
+    i {
+      padding-left: 14px
+    }
+  }
+}
+
+.mb-30 {
+  margin-bottom: 40px
+}
+
+.mt-30 {
+  margin-top: 40px
+}
+
+.mb-40 {
+  margin-bottom: 40px
+}
+
+.mt-40 {
+  margin-top: 40px
+}
+
+.mb-50 {
+  margin-bottom: 50px
+}
+
+.mt-50 {
+  margin-top: 50px
+}
+
+.mb-60 {
+  margin-bottom: 60px
+}
+
+.mt-60 {
+  margin-top: 60px
+}
+
+.mt-30 {
+  margin-top: 30px
+}
+
+.mb-30 {
+  margin-bottom: 30px
+}
+
+// line limit start
+.line-limit-1 {
+  @include line_limit (1 !important);
+}
+
+.line-limit-2 {
+  @include line_limit (2 !important);
+}
+
+.line-limit-3 {
+  @include line_limit (3 !important);
+}
+
+.line-limit-4 {
+  @include line_limit (4 !important);
+}
+
+.line-limit-6 {
+  @include line_limit (6 !important);
+}
+
+.line-limit-7 {
+  @include line_limit (7 !important);
+}
+
+.line-limit-8 {
+  @include line_limit (8 !important);
+}
+
+.line-limit-9 {
+  @include line_limit (9 !important);
+}
+
+.line-limit-10 {
+  @include line_limit (10 !important);
+}

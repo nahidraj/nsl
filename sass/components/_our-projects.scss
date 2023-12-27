@@ -1,0 +1,78 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.our_projects {
+  background-color: $black;
+  margin-top: 144px;
+  padding: 80px 0;
+
+  .projects_main {
+    .projects_sorting:nth-child(even) {
+      margin-top: 58px;
+    }
+
+    .projects_image {
+      position: relative;
+
+      .image {
+        overflow: hidden;
+        position: relative;
+
+        img {
+          &:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: 100%;
+            transition: .6s;
+            background-size: cover;
+          }
+        }
+
+        &:hover {
+          img {
+            &:first-child {
+              transform: translateY(0) scaleY(1);
+              opacity: 1;
+              -webkit-filter: blur(0);
+              filter: blur(0);
+            }
+
+            &:nth-child(2) {
+              transform: translateY(50%) scaleY(2);
+              opacity: 0;
+              -webkit-filter: blur(10px);
+              filter: blur(10px);
+            }
+          }
+        }
+      }
+    }
+
+    .projects_text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 30px;
+      background-image: linear-gradient(rgba(0, 7, 26, 0), rgba(0, 7, 26, 0.5));
+
+      .projects_title {
+        @include font(42px, 600);
+      }
+
+      .projects_subtitle {
+        @include font(15px, 500);
+        margin-bottom: 0;
+        margin-top: 5px;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+  }
+}

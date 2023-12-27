@@ -1,0 +1,223 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/gradient-text";
+
+.service_area {
+  padding-top: 80px;
+  overflow: hidden;
+  position: relative;
+
+  .service_circle {
+    top: -60px;
+    left: -120px;
+    position: absolute;
+    z-index: -1;
+    animation: 10s linear infinite rotated;
+  }
+
+  .service_shape {
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    animation: 10s linear infinite updown;
+  }
+
+  @keyframes rotated {
+    0% {
+      rotate: 0deg;
+    }
+
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+  @keyframes updown {
+
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+    }
+
+    50% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px)
+    }
+  }
+
+  .service_left {
+    padding-top: 50px;
+    position: relative;
+    z-index: 9;
+
+    .nav-link {
+      @include font(26px, 600);
+      color: $black;
+      background-color: transparent;
+      line-height: 1.33em;
+      text-align: left;
+      margin-bottom: 18px;
+      padding: 0 0 25px;
+      @include gradient_black;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 40%;
+        right: -115px;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: $transition;
+        z-index: 9;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #00071a;
+        left: 0;
+        bottom: 0;
+        opacity: .1;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: $gradient;
+        left: auto;
+        right: 0;
+        bottom: 0;
+        -webkit-transition: .4s linear;
+        transition: $transition
+      }
+    }
+
+    .nav-link.active {
+      @include gradient_primary;
+
+      img {
+        right: -135px;
+        opacity: 1;
+      }
+
+      &::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  .service_right {
+    .fade {
+      transition: opacity .1s linear;
+    }
+
+    .tab-pane {
+      .right_info {
+        transition: $transition;
+        position: relative;
+        right: -30px;
+      }
+    }
+
+    .tab-pane.show {
+      .right_info {
+        right: 0px;
+      }
+    }
+
+    .image {
+      max-width: 500px;
+      flex: 0 0 auto;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        &:nth-child(2) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: auto;
+          height: 100%;
+          transition: .6s;
+          background-size: cover;
+        }
+      }
+
+      &:hover {
+        img {
+          &:first-child {
+            transform: translateY(0) scaleY(1);
+            opacity: 1;
+            -webkit-filter: blur(0);
+            filter: blur(0);
+          }
+
+          &:nth-child(2) {
+            transform: translateY(50%) scaleY(2);
+            opacity: 0;
+            -webkit-filter: blur(10px);
+            filter: blur(10px);
+          }
+        }
+      }
+    }
+
+    .text {
+      padding-left: 50px;
+      transition: $transition;
+      margin-top: 50px;
+
+      .icon {
+        position: relative;
+        width: 78px;
+        height: 78px;
+        display: inline-block;
+        background-color: rgba(182, 11, 11, .1);
+        text-align: center;
+        line-height: 78px;
+        border-radius: 50%;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          border: 1px dashed $primary;
+          left: 0;
+          top: 0;
+          animation: 5s infinite choose-2-f-item;
+        }
+      }
+
+      .info {
+        margin-top: 30px;
+
+        p {
+          @include font(18px, 500);
+          color: $para;
+        }
+      }
+    }
+
+    @keyframes choose-2-f-item {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+  }
+}

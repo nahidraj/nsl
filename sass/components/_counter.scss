@@ -1,0 +1,32 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.counter_area {
+  padding-top: 80px;
+
+  .counter_main {
+    background: $gradient;
+    clip-path: polygon(12% 0%, 88% 0%, 100% 100%, 0% 100%);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    padding: 35px 150px;
+
+    .counter_item {
+      text-align: center;
+
+      .counter_number {
+        @include font(62px, 500);
+        color: $white;
+        margin-bottom: 10px;
+        line-height: 50px
+      }
+
+      .title {
+        @include font(18px, 600);
+        color: $white;
+      }
+    }
+  }
+}

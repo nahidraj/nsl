@@ -1,0 +1,66 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.expertise_area {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .details {
+    .expertise_item {
+      border-bottom: 1px solid $border;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      position: relative;
+
+      .icon {
+        width: 100px;
+        height: 100px;
+        border: 1px dashed $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        img{
+          width: 50%;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: linear-gradient(90deg, #b60b0b 0, #ff3838 100%);
+        left: auto;
+        right: 0;
+        bottom: 0;
+        transition: all 0.6s ease-out 0s;
+      }
+
+      &:hover {
+        &::before {
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+      }
+
+      .title {
+        @include font(30px, 500);
+        color: $black;
+        &:hover{
+          color: $primary
+        }
+      }
+
+      .text {
+        p {
+          @include font(16px, 400);
+        }
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

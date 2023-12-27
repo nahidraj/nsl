@@ -1,0 +1,147 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.footer_area {
+  margin-top: -115px;
+
+  .footer_bg {
+    background-color: $black;
+    padding: 200px 0 30px;
+
+    .footer_widget {
+      .title {
+        @include font(36px, 600);
+        line-height: 1.4em;
+        color: $white;
+      }
+
+      p {
+        color: $white;
+        opacity: 0.8;
+        font-size: 18px;
+      }
+
+      .footer_title {
+        @include font(26px, 500);
+        color: $white;
+        display: inline-block;
+        border-bottom: 1px solid $white;
+        padding-bottom: 10px;
+      }
+
+      ul {
+        li {
+          margin-bottom: 8px;
+
+          a {
+            color: $white;
+            opacity: 0.8;
+            @include font(16px, 400);
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+
+      .contact_info {
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .icon {
+            margin-right: 20px;
+
+            i {
+              color: $white;
+              width: 35px;
+              height: 35px;
+              border: 1px solid $white;
+              border-radius: 3px;
+              text-align: center;
+              line-height: 35px;
+            }
+          }
+
+          .text {
+
+            a {}
+          }
+        }
+      }
+    }
+
+    .footer_btm {
+      padding-top: 30px;
+      margin-top: 50px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+      p {
+        @include font(16px, 500);
+        color: $white;
+
+        a {
+          color: $primary;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+/* scroll to top area */
+.scroll-to-top {
+  display: inline-block;
+  background: $gradient;
+  width: 40px;
+  height: 60px;
+  line-height: 45px;
+  color: $white;
+  text-align: center;
+  border-radius: 50px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 0;
+  position: fixed;
+  bottom: -60px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 18px;
+  z-index: 99;
+  cursor: pointer;
+  transition: $transition;
+
+  span {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+}
+
+.scroll-to-top::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 1;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0px;
+}

@@ -1,0 +1,62 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.products_area {
+  padding: 80px 0;
+
+  .products_main {
+    .products_item {
+      border: 1px solid $border;
+
+      .image {
+        overflow: hidden;
+        position: relative;
+
+        img {
+          &:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: 100%;
+            transition: .6s;
+            background-size: cover;
+          }
+        }
+
+        &:hover {
+          img {
+            &:first-child {
+              transform: translateY(0) scaleY(1);
+              opacity: 1;
+              -webkit-filter: blur(0);
+              filter: blur(0);
+            }
+
+            &:nth-child(2) {
+              transform: translateY(50%) scaleY(2);
+              opacity: 0;
+              -webkit-filter: blur(10px);
+              filter: blur(10px);
+            }
+          }
+        }
+      }
+
+      .text {
+        padding: 24px;
+
+        .title {
+          @include font(26px, 500);
+          color: $black;
+          line-height: 36px;
+          margin-bottom: 10px;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.testimonial_area {
+  padding-top: 0;
+
+  .testimonial_main {
+    padding: 100px 0;
+    padding-top: 130px;
+    position: relative;
+    z-index: 9;
+    background-color: $black !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+
+    .image_slider {
+      padding: 0 150px;
+
+      .slider_item {
+        .image {
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          filter: grayscale(100%);
+          margin: 0 auto;
+          border: 10px solid #313249;
+          transition: $transition;
+
+          img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+
+          }
+        }
+      }
+
+      .slick-list {
+        padding: 100px 0 !important;
+        margin: -100px 0;
+      }
+
+      .slick-slide {
+
+        &.slick-current,
+        &.slick-center {
+          .image {
+            transform: scale(1.4);
+            filter: grayscale(0);
+          }
+        }
+      }
+
+      .icon {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.5;
+        font-size: 20px;
+        color: $white;
+        z-index: 9;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .icon.left {
+        left: 100px;
+      }
+
+      .icon.right {
+        left: calc(100% - 140px);
+      }
+    }
+
+    .text_slider {
+      padding: 0 250px;
+      color: $white;
+      margin-top: 80px;
+
+      .slider_item {
+        position: relative;
+
+        .quote_1,
+        .quote_2 {
+          position: absolute;
+          opacity: 0.2;
+        }
+        .quote_1{
+          left: 0;
+          top: 0;
+        }
+        .quote_2{
+          right: 0;
+          bottom: 0;
+        }
+      }
+
+      .title {
+        @include font(28px, 600);
+        color: $white;
+        text-transform: uppercase;
+      }
+
+      span {
+        margin: 10px 0 20px 0;
+        @include font(18px, 500);
+        color: $primary;
+      }
+
+      p {
+        color: $white;
+        font-style: italic;
+      }
+    }
+  }
+}
