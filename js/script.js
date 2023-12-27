@@ -258,7 +258,7 @@ $(function () {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
-          centerMode:false,
+          centerMode: false,
           speed: 6000,
         }
       },
@@ -530,6 +530,23 @@ $(function () {
         0
       );
     }
+  });
+
+  // mobilel menu js
+
+  $(".mobile-topbar .bars i").on("click", function () {
+    $(".mobile-menu-overlay,.mobile-menu-main").addClass("active");
+    return false;
+  });
+
+  $(".close-mobile-menu,.mobile-menu-overlay").on("click", function () {
+    $(".mobile-menu-overlay,.mobile-menu-main").removeClass("active");
+  });
+
+  $('.sub-mobile-menu ul').hide();
+  $(".sub-mobile-menu a").on("click", function () {
+    $(this).parent(".sub-mobile-menu").children("ul").slideToggle("100");
+    $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
   });
 
 
