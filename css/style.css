@@ -2279,8 +2279,8 @@ p {
   border: 1px solid rgba(14, 5, 2, 0.1);
 }
 .products_area .products_main .products_item .image {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .products_area .products_main .products_item .image img:nth-child(2) {
   position: absolute;
@@ -2354,6 +2354,336 @@ p {
 
 .projects_area {
   padding: 80px 0;
+}
+.projects_area .portfolio-item {
+  overflow: hidden;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.09);
+  padding: 24px;
+  border-radius: 10px;
+}
+.projects_area .portfolio-item .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.projects_area .portfolio-item .image img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  transition: 0.6s;
+  background-size: cover;
+}
+.projects_area .portfolio-item .image:hover img:first-child {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+.projects_area .portfolio-item .image:hover img:nth-child(2) {
+  transform: translateY(50%) scaleY(2);
+  opacity: 0;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.projects_area .portfolio-item .image .read_more_btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  color: #00071a;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+.projects_area .portfolio-item .image .read_more_btn:hover {
+  background-color: #e02626;
+  color: #ffffff;
+}
+.projects_area .portfolio-item .info {
+  margin-top: 20px;
+}
+.projects_area .portfolio-item .info .projects_title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #00071a;
+}
+.projects_area .portfolio-item .info .projects_title:hover {
+  color: #e02626;
+}
+.projects_area .portfolio-item .info .category {
+  color: #4d515f;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.portfolio-btn {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.portfolio-btn button {
+  border: 0;
+  background-color: #00071a;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 26px;
+  margin: 0 2px;
+}
+.portfolio-btn button:hover {
+  background-color: #e02626;
+}
+.portfolio-btn button.active {
+  background-color: #e02626;
+}
+
+.project_details_area {
+  padding: 80px 0;
+}
+.project_details_area .projects_image {
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.project_details_area .project_text .title {
+  font-size: 40px;
+  font-weight: 500;
+}
+.project_details_area .project_text p {
+  margin-top: 24px;
+  text-align: justify;
+}
+.project_details_area .project_text .inner_title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.project_details_area .project_text .solutions {
+  margin-top: 30px;
+}
+.project_details_area .project_text .solutions .solutions_info li {
+  color: #4d515f;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 30px;
+}
+.project_details_area .project_text .solutions .solutions_info li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  left: 0px;
+  position: absolute;
+  color: #e02626;
+}
+.project_details_area .project_text .solutions .solutions_info li + li {
+  margin-top: 10px;
+}
+.project_details_area .project_text .solutions_image {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.project_details_area .project_text .solutions_image img {
+  border-radius: 10px;
+}
+.project_details_area .client_information {
+  background-color: #00071a;
+  padding: 30px;
+  border-radius: 10px;
+  position: sticky;
+  top: 120px;
+}
+.project_details_area .client_information .main_title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.project_details_area .client_information .client_info li {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+.project_details_area .client_information .client_info .list_title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.project_details_area .client_information .client_info .subtitle {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.about_us_page {
+  padding-bottom: 80px;
+}
+
+.management_team {
+  padding-top: 80px;
+}
+.management_team .team_main {
+  margin-top: 60px;
+}
+.management_team .team_main .team_item {
+  position: relative;
+}
+.management_team .team_main .team_item .image {
+  background-color: #ffffff;
+  background-color: #f2f2f2;
+  border-radius: 500px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+.management_team .team_main .team_item .image::before {
+  width: 100%;
+  border-radius: 500px;
+  height: 100%;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  transition: all 0.4s ease-out 0s;
+}
+.management_team .team_main .team_item .text {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: inline-block;
+}
+.management_team .team_main .team_item .text .name {
+  position: relative;
+  top: -10px;
+  transition: all 0.4s ease-out 0s;
+  opacity: 0;
+}
+.management_team .team_main .team_item .text .name a {
+  background: linear-gradient(90deg, #b60b0b 0, #ff3838 100%);
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 18px 35px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.management_team .team_main .team_item .text .designation {
+  position: relative;
+  top: 10px;
+  background: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4d515f;
+  padding: 6px 20px;
+  border-radius: 50px;
+  transition: all 0.4s ease-out 0s;
+  display: inline-block;
+  opacity: 0;
+}
+.management_team .team_main .team_item:hover .image::before {
+  border-color: #e02626;
+}
+.management_team .team_main .team_item:hover .name {
+  top: 0;
+  opacity: 1;
+}
+.management_team .team_main .team_item:hover .designation {
+  top: 0;
+  opacity: 1;
+}
+
+.project_details_area {
+  padding: 80px 0;
+}
+.project_details_area .projects_image {
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.project_details_area .project_text .title {
+  font-size: 40px;
+  font-weight: 500;
+}
+.project_details_area .project_text p {
+  margin-top: 24px;
+  text-align: justify;
+}
+.project_details_area .project_text .inner_title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.project_details_area .project_text .solutions {
+  margin-top: 30px;
+}
+.project_details_area .project_text .solutions .solutions_info li {
+  color: #4d515f;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 30px;
+}
+.project_details_area .project_text .solutions .solutions_info li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  left: 0px;
+  position: absolute;
+  color: #e02626;
+}
+.project_details_area .project_text .solutions .solutions_info li + li {
+  margin-top: 10px;
+}
+.project_details_area .project_text .solutions_image {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.project_details_area .project_text .solutions_image img {
+  border-radius: 10px;
+}
+.project_details_area .client_information {
+  background-color: #00071a;
+  padding: 30px;
+  border-radius: 10px;
+  position: sticky;
+  top: 120px;
+}
+.project_details_area .client_information .main_title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.project_details_area .client_information .client_info li {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+.project_details_area .client_information .client_info .list_title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.project_details_area .client_information .client_info .subtitle {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

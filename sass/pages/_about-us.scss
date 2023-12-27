@@ -1,0 +1,96 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.about_us_page {
+  padding-bottom: 80px;
+}
+
+.management_team {
+  padding-top: 80px;
+
+  .team_main {
+    margin-top: 60px;
+
+    .team_item {
+      position: relative;
+
+
+      .image {
+        background-color: $white;
+        background-color: $bg;
+        border-radius: 500px;
+        padding-top: 20px;
+        overflow: hidden;
+
+        &::before {
+          width: 100%;
+          border-radius: 500px;
+          height: 100%;
+          border: 2px solid transparent;
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: "";
+          transition: $transition;
+        }
+      }
+
+      .text {
+        position: absolute;
+        width: 100%;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        display: inline-block;
+
+        .name {
+          position: relative;
+          top: -10px;
+          transition: $transition;
+          opacity: 0;
+
+          a {
+            background: $gradient;
+            @include font(20px, 500);
+            color: $white;
+            padding: 18px 35px;
+            border-radius: 50px;
+            margin-top: 20px;
+          }
+        }
+
+        .designation {
+          position: relative;
+          top: 10px;
+          background: $white;
+          @include font(15px, 500);
+          color: $para;
+          padding: 6px 20px;
+          border-radius: 50px;
+          transition: $transition;
+          display: inline-block;
+          opacity: 0;
+        }
+      }
+
+      &:hover {
+        .image {
+          &::before {
+            border-color: $primary;
+          }
+        }
+
+        .name {
+          top: 0;
+          opacity: 1;
+        }
+
+        .designation {
+          top: 0;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

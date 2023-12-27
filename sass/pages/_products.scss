@@ -9,8 +9,8 @@
       border: 1px solid $border;
 
       .image {
-        overflow: hidden;
         position: relative;
+        overflow: hidden;
 
         img {
           &:nth-child(2) {

@@ -218,6 +218,20 @@ $(function () {
     });
   });
 
+  // Run the animation when the page is fully loaded
+  $(document).ready(function () {
+    // Select all elements with the class 'clients_label' and animate them
+    gsap.from('.projects_label', {
+      duration: 1,
+      opacity: 0,
+      y: 30,
+      stagger: 0.2, // Stagger the animations for a smoother effect
+      ease: 'power2.out'
+    });
+  });
+
+
+
   // Products slider js
   $('.products_slider').slick({
     slidesToShow: 3,
@@ -502,6 +516,25 @@ $(function () {
     });
   });
 
+// project details image animation
+  gsap.utils.toArray(".content_image").forEach(function (container) {
+    let image = container.querySelector("img");
+
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: container,
+        scrub: true,
+        pin: false,
+      },
+    });
+    tl.from(image, {
+      yPercent: -60,
+      ease: Power2.out,
+    }).to(image, {
+      yPercent: 60,
+      ease: Power2.out,
+    });
+  });
   // make the right edge "stick" to the scroll bar. force3D: true improves performance
   gsap.set(".skewElem", {
     transformOrigin: "right center",
