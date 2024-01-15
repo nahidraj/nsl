@@ -208,7 +208,42 @@
     font-size: 16px;
   }
 
+  .footer_area .footer_bg .footer_widget .footer_title {
+    font-size: 18px;
+  }
+
   // footer area end
+  // bread crumb area start
+  .bread_crumb_area .info ul {
+    padding: 12px 22px;
+  }
+
+  .bread_crumb_area .info .title {
+    font-size: 42px;
+    margin-bottom: 24px;
+  }
+
+  .bread_crumb_area .info ul li {
+    font-size: 16px;
+  }
+
+  .bread_crumb_area .overlay {
+    padding: 140px 0;
+    padding-bottom: 60px;
+  }
+
+  // bread crumb area end
+  // service page start
+  .services_area .services_item .info_box .title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .services_area .services_item .number {
+    font-size: 48px;
+  }
+
+  // service page end
 }
 
 @media (max-width:1199.98px) {
@@ -340,8 +375,62 @@
     font-size: 28px;
   }
 
+  .footer_area .footer_bg .footer_widget .title {
+    font-size: 24px;
+  }
+
   // contact area end
 
+  // team page start
+  .management_team .team_main .team_item .text .name a {
+    font-size: 17px;
+    padding: 14px 35px;
+  }
+
+  .management_team .team_main .team_item .text .designation {
+    font-size: 14px;
+    padding: 5px 16px;
+  }
+
+  // team page end
+  // services page start
+  .services_area .services_item .info_box .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .services_area .services_item {
+    padding: 28px 24px;
+  }
+
+  .services_area .services_item .read_more_btn .read_more {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  // services page end
+  // products page start
+  .products_area .products_main .products_item .text .title {
+    font-size: 24px;
+  }
+
+  // products page end
+  // projects page start
+  .projects_area .portfolio-item .info .projects_title {
+    font-size: 24px;
+  }
+
+  .portfolio-btn button {
+    font-size: 16px;
+    padding: 5px 18px;
+  }
+
+  // projects page end
+  .project_details_area .project_text .solutions .solutions_info li {
+    font-size: 16px;
+  }
 }
 
 @media (max-width:991.98px) {
@@ -506,7 +595,28 @@
     justify-content: flex-end;
   }
 
+  .footer_area .footer_bg .footer_widget .footer_title {
+    font-size: 24px;
+  }
+
   // contact area end
+  .solutions_info {
+    margin-bottom: 30px;
+  }
+
+  .client_information {
+    margin-top: 30px;
+  }
+
+  .project_text {
+    .col-lg-7 {
+      order: 2;
+    }
+  }
+
+  .project_details_area .projects_image {
+    margin-top: 0 !important;
+  }
 }
 
 @media (max-width:767.98px) {
@@ -631,6 +741,22 @@
   .contact_us_area .contact_bg .overlay {
     padding: 16px 40px;
   }
+
+  // team page start
+  .bread_crumb_area .info .title {
+    font-size: 32px;
+  }
+
+  // team page end
+  .portfolio-btn button {
+    margin-bottom: 7px;
+  }
+
+  .project_details_area .project_text .title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
 }
 
 @media (max-width:575.98px) {
@@ -729,5 +855,14 @@
 
   .contact_us_area .contact_bg .contact_info .text {
     margin-left: 0;
+  }
+
+  .mission_vision .mission_vision_item {
+    padding: 30px;
+    display: block;
+  }
+
+  .mission_vision .mission_vision_item .image {
+    display: none;
   }
 }

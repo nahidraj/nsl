@@ -2605,6 +2605,48 @@ p {
   opacity: 1;
 }
 
+.team_page {
+  padding-bottom: 80px;
+}
+.team_page .team_main {
+  margin-top: 0px;
+}
+
+.mission_vision {
+  padding-top: 144px;
+}
+.mission_vision .mission_vision_item {
+  padding: 40px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.09);
+  display: flex;
+  align-items: center;
+}
+.mission_vision .mission_vision_item .text .title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.mission_vision .mission_vision_item .text p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.mission_vision .mission_vision_item .image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid rgba(14, 5, 2, 0.1);
+  padding: 6px;
+  flex: 0 0 auto;
+  margin-left: 30px;
+  overflow: hidden;
+}
+.mission_vision .mission_vision_item .image img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
 .project_details_area {
   padding: 80px 0;
 }
