@@ -1,0 +1,101 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.career_area {
+  padding: 80px 0;
+}
+
+.career_area .career_position_main .career_position_item {
+  border-radius: 15px;
+  background-color: $bg;
+  height: 100%;
+  padding: 50px 30px;
+}
+
+.career_area .career_position_main .career_position_item .title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.career_area .career_position_main .career_position_item ul li {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.career_area .career_position_main .career_position_item ul li i {
+  margin-right: 5px;
+}
+
+.career_area .career_position_main .career_position_item .apply_now {
+  color: $primary;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.career_area .career_position_main .career_position_item .apply_now i {
+  margin-left: 8px;
+}
+
+.career_details p {
+  margin-bottom: 40px;
+  color: $black;
+  font-size: 15px;
+}
+
+.career_details .title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.career_details ul {
+  padding-left: 15px;
+  margin-bottom: 40px;
+}
+
+.career_details ul li {
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+
+.career_details .job_info {
+  max-width: 600px;
+}
+
+.career_details .job_info table td {
+  font-size: 15px;
+}
+
+.career_details .send_resume_form {
+  margin-top: 50px;
+}
+
+.career_details .send_resume_form .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.career_details .send_resume_form .form_main {
+  border: 1px solid $border;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.career_details .send_resume_form .form_main .apply_btn {
+  background-color: $primary;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: $white;
+  border: 0;
+  padding: 12px 32px;
+}
+
+.career_details .send_resume_form .form_main .apply_btn:hover {
+  background-color: $black;
+}
