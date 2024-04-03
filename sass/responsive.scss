@@ -244,6 +244,9 @@
   }
 
   // service page end
+  .blog_area .bi-sidebar-widget .tag-widget a {
+    padding: 5px 15px;
+  }
 }
 
 @media (max-width:1199.98px) {
@@ -430,6 +433,10 @@
   // projects page end
   .project_details_area .project_text .solutions .solutions_info li {
     font-size: 16px;
+  }
+
+  .blog_area .bi-single-sidebar {
+    padding-left: 0;
   }
 }
 
@@ -755,6 +762,10 @@
   .project_details_area .project_text .title {
     font-size: 30px;
     font-weight: 500;
+  }
+
+  .blog_area .blog-text .title {
+    font-size: 22px;
   }
 
 }
