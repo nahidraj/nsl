@@ -1,0 +1,33 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.nogor_life_area{
+  padding: 80px 0;
+  .image{
+    cursor: pointer;
+    &:hover{
+      img{
+        filter: unset !important;
+      }
+    }
+  }
+  .modal-body{
+    .button{
+      position: absolute;
+      top: 25px;
+      right: 25px;
+    }
+    .img{
+      margin-bottom: 20px;
+    }
+    .text{
+      .title{
+        @include font(24px, 500);
+        margin-bottom: 20px;
+      }
+      p+p{
+        margin-top: 15px;
+      }
+    }
+  }
+}

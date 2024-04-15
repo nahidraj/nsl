@@ -16,6 +16,10 @@
       border-radius: 10px;
 
       img {
+        aspect-ratio: 16/15;
+        overflow: hidden;
+        object-fit: cover;
+
         &:nth-child(2) {
           position: absolute;
           top: 0;
@@ -73,14 +77,16 @@
       .projects_title {
         @include font(26px, 500);
         color: $black;
-        &:hover{
+
+        &:hover {
           color: $primary;
         }
       }
-      .category{
+
+      .category {
         color: $para;
         @include font(15px, 500);
-        
+
       }
     }
   }

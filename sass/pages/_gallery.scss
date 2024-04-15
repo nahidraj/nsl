@@ -1,6 +1,89 @@
 @import "../variable/variable";
 @import "../mixin/font";
 
-.gallery_area{
+.gallery_area {
   padding: 80px 0;
+
+  .image {
+    border: 0;
+    height: 100%;
+    border: 1px solid $border;
+
+    .img {
+      overflow: hidden;
+
+      img {
+        aspect-ratio: 16 / 12;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: $transition;
+      }
+    }
+
+    .text {
+      padding: 20px;
+
+      h4 {
+        @include font(22px, 500);
+        color: $black;
+      }
+    }
+
+    &:hover {
+      .img {
+        img {
+          filter: grayscale(0) invert(1)
+        }
+      }
+    }
+  }
+}
+
+.gallery_view_area {
+  .image {
+    height: 100%;
+    background-color: $bg;
+    position: relative;
+    border: 0;
+
+    .img {
+      overflow: hidden;
+
+      img {
+        aspect-ratio: 16 / 12;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    i {
+      width: 70px;
+      height: 70px;
+      background-color: $primary;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 70px;
+      color: $white;
+      font-size: 22px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: $transition;
+    }
+
+    &:hover {
+      .img {
+        img {
+          filter: unset
+        }
+      }
+
+      i {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
 }

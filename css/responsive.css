@@ -293,6 +293,9 @@
   .blog_area .bi-single-sidebar {
     padding-left: 0;
   }
+  .training_area .courses__details-sidebar {
+    padding: 20px 20px 20px;
+  }
 }
 @media (max-width: 991.98px) {
   .banner_area .banner_image_slider {
@@ -418,6 +421,9 @@
   .project_details_area .projects_image {
     margin-top: 0 !important;
   }
+  .training_area .courses__details-sidebar {
+    margin-left: 0;
+  }
 }
 @media (max-width: 767.98px) {
   .banner_area .banner_image_slider {
@@ -514,6 +520,38 @@
   .blog_area .blog-text .title {
     font-size: 22px;
   }
+  .gallery_area .image .text h4 {
+    font-size: 16px;
+  }
+  .gallery_view_area .image i {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 16px;
+  }
+  .training_area .courses__item {
+    padding: 12px;
+  }
+  .training_area .courses__item .courses__item-content .title a {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.4em;
+  }
+  .training_area .courses__item-bottom .price {
+    font-size: 17px;
+  }
+  .training_area .training_details .text .title {
+    font-size: 22px;
+    line-height: 1.4em;
+  }
+  .training_area .training_details .text .inner_title {
+    font-size: 20px;
+  }
+  .training_area .training_details .text .listed_info li {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
 }
 @media (max-width: 575.98px) {
   .banner_area .banner_image_slider {
@@ -597,6 +635,15 @@
   }
   .mission_vision .mission_vision_item .image {
     display: none;
+  }
+  .training_area .courses__item {
+    padding: 16px;
+  }
+  .training_area .courses__item .courses__item-content .title a {
+    font-size: 20px;
+  }
+  .training_area .courses__item-bottom .price {
+    font-size: 18px;
   }
 }
 
