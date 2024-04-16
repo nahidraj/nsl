@@ -1,31 +1,49 @@
 @import "../variable/variable";
 @import "../mixin/font";
 
-.nogor_life_area{
+.nogor_life_area {
   padding: 80px 0;
-  .image{
+
+  .image {
     cursor: pointer;
-    &:hover{
-      img{
+    border: 0;
+    background-color: $bg;
+
+    img {
+      object-fit: cover !important;
+    }
+
+    &:hover {
+      img {
         filter: unset !important;
       }
     }
   }
-  .modal-body{
-    .button{
+
+  .modal-body {
+    .button {
       position: absolute;
       top: 25px;
       right: 25px;
     }
-    .img{
+
+    .img {
       margin-bottom: 20px;
+
+      img {
+        aspect-ratio: 16/7;
+        object-fit: contain;
+        background: $bg;
+      }
     }
-    .text{
-      .title{
+
+    .text {
+      .title {
         @include font(24px, 500);
         margin-bottom: 20px;
       }
-      p+p{
+
+      p+p {
         margin-top: 15px;
       }
     }
