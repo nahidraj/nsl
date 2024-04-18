@@ -687,6 +687,18 @@
   .nogor_life_details_area .top_info_slider .text .title {
     font-size: 24px;
   }
+  .nogor_life_area .nogor_life_main .life_item .image .text {
+    background-color: transparent;
+    position: static;
+    margin-bottom: 0;
+    text-align: left !important;
+  }
+  .nogor_life_area .nogor_life_main .life_item .image .text .title {
+    color: #00071a;
+  }
+  .nogor_life_area .nogor_life_main .life_item .image .text p {
+    color: #4d515f !important;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */

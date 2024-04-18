@@ -1963,12 +1963,12 @@ p {
   background-size: cover !important;
 }
 .bread_crumb_area .overlay {
-  padding: 160px 0;
-  padding-bottom: 60px;
+  padding: 140px 0;
+  padding-bottom: 40px;
   background: rgba(22, 35, 43, 0.7);
 }
 .bread_crumb_area .info .title {
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 30px;
@@ -1982,7 +1982,7 @@ p {
 }
 .bread_crumb_area .info ul li {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #ffffff;
   position: relative;

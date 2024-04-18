@@ -7,14 +7,14 @@
   background-size: cover !important;
 
   .overlay {
-    padding: 160px 0;
-    padding-bottom: 60px;
+    padding: 140px 0;
+    padding-bottom: 40px;
     background: rgba(22, 35, 43, .7);
   }
 
   .info {
     .title {
-      @include font(52px, 500);
+      @include font(42px, 500);
       color: $white;
       margin-bottom: 30px;
     }
@@ -28,7 +28,7 @@
 
       li {
         display: inline-block;
-        @include font(16px, 500);
+        @include font(14px, 500);
         color: $white;
         position: relative;
 
