@@ -1,50 +1,173 @@
 @import "../variable/variable";
 @import "../mixin/font";
 
-.nogor_life_area {
-  padding: 80px 0;
+.nogor_life_banner {
+  position: relative;
 
   .image {
-    cursor: pointer;
-    border: 0;
-    background-color: $bg;
+    background: url(../images/nogor-life-bg.png);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
 
-    img {
-      object-fit: cover !important;
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.47);
+    padding: 104px 0;
+
+    .title {
+      @include font(48px, 400);
+      color: $white;
+      margin-bottom: 15px;
     }
 
-    &:hover {
-      img {
-        filter: unset !important;
+    p {
+      color: $white;
+    }
+  }
+}
+
+.nogor_life_area {
+  padding-bottom: 60px;
+
+
+
+  .nogor_life_main {
+    margin-top: 50px;
+
+    .life_item {
+      .image {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          border-radius: 10px;
+          transition: $transition;
+        }
+
+        .text {
+          background-color: rgba(217, 58, 58, 0.8);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 16px;
+          margin-bottom: -80px;
+          transition: $transition;
+
+          .title {
+            @include font(28px, 400);
+            color: $white;
+          }
+
+          p {
+            margin-top: 0;
+            @include font(15px, 400);
+            color: $white;
+            line-height: 1.5em;
+            margin-top: 15px;
+            visibility: hidden;
+          }
+        }
+
+        &:hover {
+          .text {
+            margin-bottom: 0;
+
+            p {
+              visibility: visible;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .image {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    .life_item_sm {
+      border: 1px solid $border;
+      border-radius: 10px;
+
+      .text {
+        padding: 20px;
+        min-height: 204px;
+
+        .title {
+          @include font(20px, 400);
+          color: $black;
+        }
+
+        p {
+          @include font(15px, 400);
+          line-height: 1.5em;
+          margin-top: 15px;
+        }
       }
     }
   }
+}
 
-  .modal-body {
-    .button {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-    }
+.nogor_life_details_area {
+  padding: 0 0 50px;
 
-    .img {
-      margin-bottom: 20px;
+  .top_info_slider {
+    background-color: $white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 14px;
+    margin-top: 60px;
 
-      img {
-        aspect-ratio: 16/7;
-        object-fit: contain;
-        background: $bg;
-      }
+    .image {
+      border-radius: 10px;
+      overflow: hidden;
     }
 
     .text {
       .title {
-        @include font(24px, 500);
-        margin-bottom: 20px;
+        @include font(28px, 400);
       }
 
-      p+p {
+      p {
+        margin-top: 0;
+        @include font(16px, 400);
+        line-height: 1.5em;
         margin-top: 15px;
+      }
+    }
+  }
+}
+
+.bottom_sm_slider {
+  margin-top: 15px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 5px;
+
+      button {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: transparent;
+        border: 0;
+        opacity: 0.5;
+      }
+    }
+
+    .slick-center {
+      button {
+        opacity: 1;
       }
     }
   }

@@ -1963,12 +1963,12 @@ p {
   background-size: cover !important;
 }
 .bread_crumb_area .overlay {
-  padding: 180px 0;
-  padding-bottom: 120px;
+  padding: 160px 0;
+  padding-bottom: 60px;
   background: rgba(22, 35, 43, 0.7);
 }
 .bread_crumb_area .info .title {
-  font-size: 62px;
+  font-size: 52px;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 30px;
@@ -1977,12 +1977,12 @@ p {
   display: inline-block;
   border: 1px solid #e02626;
   background: rgba(255, 56, 56, 0.1);
-  padding: 18px 30px;
+  padding: 12px 20px;
   border-radius: 10px;
 }
 .bread_crumb_area .info ul li {
   display: inline-block;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   color: #ffffff;
   position: relative;
@@ -3091,40 +3091,144 @@ p {
   color: #ffffff;
 }
 
+.nogor_life_banner {
+  position: relative;
+}
+.nogor_life_banner .image {
+  background: url(../images/nogor-life-bg.png);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.nogor_life_banner .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.47);
+  padding: 104px 0;
+}
+.nogor_life_banner .overlay .title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.nogor_life_banner .overlay p {
+  color: #ffffff;
+}
+
 .nogor_life_area {
-  padding: 80px 0;
+  padding-bottom: 60px;
 }
-.nogor_life_area .image {
-  cursor: pointer;
-  border: 0;
-  background-color: #f2f2f2;
+.nogor_life_area .nogor_life_main {
+  margin-top: 50px;
 }
-.nogor_life_area .image img {
-  object-fit: cover !important;
+.nogor_life_area .nogor_life_main .life_item .image {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
-.nogor_life_area .image:hover img {
-  filter: unset !important;
+.nogor_life_area .nogor_life_main .life_item .image img {
+  border-radius: 10px;
+  transition: all 0.4s ease-out 0s;
 }
-.nogor_life_area .modal-body .button {
+.nogor_life_area .nogor_life_main .life_item .image .text {
+  background-color: rgba(217, 58, 58, 0.8);
   position: absolute;
-  top: 25px;
-  right: 25px;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+  margin-bottom: -80px;
+  transition: all 0.4s ease-out 0s;
 }
-.nogor_life_area .modal-body .img {
-  margin-bottom: 20px;
+.nogor_life_area .nogor_life_main .life_item .image .text .title {
+  font-size: 28px;
+  font-weight: 400;
+  color: #ffffff;
 }
-.nogor_life_area .modal-body .img img {
-  aspect-ratio: 16/7;
-  object-fit: contain;
-  background: #f2f2f2;
-}
-.nogor_life_area .modal-body .text .title {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.nogor_life_area .modal-body .text p + p {
+.nogor_life_area .nogor_life_main .life_item .image .text p {
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.5em;
   margin-top: 15px;
+  visibility: hidden;
+}
+.nogor_life_area .nogor_life_main .life_item .image:hover .text {
+  margin-bottom: 0;
+}
+.nogor_life_area .nogor_life_main .life_item .image:hover .text p {
+  visibility: visible;
+}
+.nogor_life_area .nogor_life_main .life_item:hover .image img {
+  transform: scale(1.1);
+}
+.nogor_life_area .nogor_life_main .life_item_sm {
+  border: 1px solid rgba(14, 5, 2, 0.1);
+  border-radius: 10px;
+}
+.nogor_life_area .nogor_life_main .life_item_sm .text {
+  padding: 20px;
+  min-height: 204px;
+}
+.nogor_life_area .nogor_life_main .life_item_sm .text .title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #00071a;
+}
+.nogor_life_area .nogor_life_main .life_item_sm .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 15px;
+}
+
+.nogor_life_details_area {
+  padding: 0 0 50px;
+}
+.nogor_life_details_area .top_info_slider {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 14px;
+  margin-top: 60px;
+}
+.nogor_life_details_area .top_info_slider .image {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.nogor_life_details_area .top_info_slider .text .title {
+  font-size: 28px;
+  font-weight: 400;
+}
+.nogor_life_details_area .top_info_slider .text p {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 15px;
+}
+
+.bottom_sm_slider {
+  margin-top: 15px;
+}
+.bottom_sm_slider ul {
+  display: flex;
+  justify-content: center;
+}
+.bottom_sm_slider ul li {
+  margin: 0 5px;
+}
+.bottom_sm_slider ul li button {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  opacity: 0.5;
+}
+.bottom_sm_slider ul .slick-center button {
+  opacity: 1;
 }
 
 .training_area {
