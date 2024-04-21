@@ -91,11 +91,7 @@
         }
       }
     }
-.big_life_item{
-  .text{
-    
-  }
-}
+
     .life_item_sm {
       border: 1px solid $border;
       border-radius: 10px;
@@ -107,12 +103,18 @@
         .title {
           @include font(20px, 400);
           color: $black;
+          transition: $transition;
         }
 
         p {
           @include font(15px, 400);
           line-height: 1.5em;
           margin-top: 15px;
+        }
+      }
+      &:hover{
+        .title{
+          color: $primary;
         }
       }
     }
@@ -133,6 +135,7 @@
     .image {
       border-radius: 10px;
       overflow: hidden;
+      padding-right: 10px
     }
 
     .text {
@@ -144,7 +147,22 @@
         margin-top: 0;
         @include font(16px, 400);
         line-height: 1.5em;
-        margin-top: 15px;
+        margin-top: 25px;
+
+        &:first-child {
+          display: none;
+        }
+      }
+
+      .first_p {
+        &::first-letter {
+          font-weight: 700;
+          color: $black
+          ;
+          font-size: 60px;
+          padding-right: 8px;
+          padding-bottom: 30px;
+        }
       }
     }
   }

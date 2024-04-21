@@ -7,33 +7,45 @@
 
 .career_area .career_position_main .career_position_item {
   border-radius: 15px;
-  background-color: $bg;
+  background-color: $white;
   height: 100%;
-  padding: 50px 30px;
+
+  .text {
+    padding: 18px;
+  }
+
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 .career_area .career_position_main .career_position_item .title {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  color: $black;
 }
 
 .career_area .career_position_main .career_position_item ul li {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   display: inline-block;
   margin-right: 15px;
+  color: $black;
 }
 
 .career_area .career_position_main .career_position_item ul li i {
-  margin-right: 5px;
+  margin-right: 8px;
+  font-size: 5px;
+  position: relative;
+  top: -3px;
 }
 
 .career_area .career_position_main .career_position_item .apply_now {
   color: $primary;
   font-size: 16px;
-  font-weight: 600;
-  margin-top: 24px;
+  font-weight: 500;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 0;
 }
 
 .career_area .career_position_main .career_position_item .apply_now i {
@@ -47,14 +59,26 @@
 }
 
 .career_details .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.career_details .inner_title {
   font-size: 26px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.car_details_main {
+  border: 1px solid $border;
+  padding: 24px;
+  border-radius: 15px;
 }
 
 .career_details ul {
   padding-left: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .career_details ul li {
@@ -71,31 +95,46 @@
 }
 
 .career_details .send_resume_form {
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 .career_details .send_resume_form .title {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 600;
   margin-bottom: 15px;
+  border-bottom: 1px solid $border;
+  padding-bottom: 18px;
 }
 
-.career_details .send_resume_form .form_main {
-  border: 1px solid $border;
-  border-radius: 10px;
-  padding: 30px;
-}
-
-.career_details .send_resume_form .form_main .apply_btn {
+.career_details .apply_btn {
   background-color: $primary;
   border-radius: 5px;
   font-size: 15px;
   font-weight: 600;
   color: $white;
   border: 0;
-  padding: 12px 32px;
+  padding: 12px 62px;
+  border-radius: 50px;
+  margin: 0 auto;
 }
 
-.career_details .send_resume_form .form_main .apply_btn:hover {
+.career_details .apply_btn:hover {
   background-color: $black;
+}
+
+.apply_now_form {
+  .car_details_main {
+    background-color: $white;
+    border: 0;
+    padding: 40px;
+    box-shadow: 0px 6px 50px rgba(1, 3, 25, 0.06);
+
+    input {
+      border-radius: 8px;
+    }
+
+    textarea {
+      border-radius: 8px;
+    }
+  }
 }

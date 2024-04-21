@@ -457,6 +457,18 @@
   .nogor_life_details_area .top_info_slider .text .title {
     margin-top: 18px;
   }
+  .blog-details .blog-details-main .text .blog-title {
+    font-size: 28px;
+  }
+  .blog-details .blog-details-main .text blockquote .text .title {
+    color: #e02626;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+  .blog-details .blog-details-main .text .blog-inner-title {
+    font-size: 23px;
+  }
 }
 @media (max-width: 767.98px) {
   .banner_area .banner_image_slider {
@@ -591,6 +603,57 @@
   .nogor_life_area .nogor_life_main .life_item .image .text {
     margin-bottom: -101px;
   }
+  .blog-details .blog-meta ul li {
+    font-size: 13px;
+  }
+  .blog-details .blog-meta ul {
+    padding: 7px 24px;
+  }
+  .blog-details .blog-details-main .text .blog-title {
+    font-size: 24px;
+    line-height: 1.3em;
+  }
+  .blog-details .blog-details-main .text blockquote {
+    padding: 20px 20px 20px 20px;
+  }
+  .blog-details .blog-details-main .text blockquote .text .title {
+    font-size: 14px;
+  }
+  .blog-details .blog-details-main .text blockquote .image img {
+    width: 80px;
+    height: 80px;
+  }
+  .blog-details .blog-details-main .text blockquote {
+    gap: 20px;
+    border-radius: 0;
+  }
+  .blog-details .blog-details-main .text .tags-and-share .share {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .blog-details .blog-details-main .text .author {
+    padding: 24px;
+  }
+  .blog-details .blog-details-main .text .avatar .image {
+    width: 100px;
+    height: 100px;
+  }
+  .blog-details .blog-details-main .text .info .title {
+    font-size: 19px;
+  }
+  .blog-details .blog-details-main .text .info p {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 1.6em;
+  }
+  .blog-details .text .all-comments .comment-item .comment-info p {
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+  .blog-details .text .all-comments .comment-item .comment-info .date {
+    font-size: 12px;
+    margin-top: 4px;
+  }
 }
 @media (max-width: 575.98px) {
   .banner_area .banner_image_slider {
@@ -698,6 +761,46 @@
   }
   .nogor_life_area .nogor_life_main .life_item .image .text p {
     color: #4d515f !important;
+  }
+  .blog-details .blog-meta ul {
+    border-radius: 0;
+    border: 0;
+  }
+  .blog-details .blog-meta ul {
+    padding: 0;
+  }
+  .blog-details .blog-details-main .text .blog-meta {
+    margin-top: 10px;
+  }
+  .blog-details .blog-meta ul li + li {
+    margin-left: 0;
+  }
+  .blog-details .blog-meta ul li {
+    margin-right: 14px;
+  }
+  .blog_details_border {
+    padding: 14px;
+  }
+  .blog-details .blog-details-main .text .author {
+    padding: 14px;
+  }
+  .blog-details .text .all-comments .comment-item .avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .blog-details .text .all-comments .comment-item .comment-info p {
+    font-size: 12px;
+  }
+  .blog-details .text .all-comments .comment-item .comment-info .date {
+    font-size: 11px;
+  }
+  .blog-details .blog-details-main .text .avatar .image {
+    width: 80px;
+    height: 80px;
+  }
+  .blog-details .blog-details-main .text .social ul {
+    text-align: center;
+    display: none;
   }
 }
 
