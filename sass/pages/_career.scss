@@ -30,6 +30,16 @@
   display: inline-block;
   margin-right: 15px;
   color: $black;
+  span{
+    background-color: $primary;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: $white;
+  }
 }
 
 .career_area .career_position_main .career_position_item ul li i {

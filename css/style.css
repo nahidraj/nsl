@@ -2838,6 +2838,16 @@ p {
   margin-right: 15px;
   color: #00071a;
 }
+.career_area .career_position_main .career_position_item ul li span {
+  background-color: #e02626;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #ffffff;
+}
 
 .career_area .career_position_main .career_position_item ul li i {
   margin-right: 8px;
