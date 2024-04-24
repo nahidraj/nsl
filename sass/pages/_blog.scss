@@ -289,33 +289,62 @@
   margin-bottom: 20px;
 }
 
-.blog-details .blog-details-main .text blockquote {
-  background-color: rgba(255, 56, 56, .1);
-  padding: 20px 53px 20px 20px;
-  margin: 30px 0;
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  border-radius: 0 150px 150px 0;
 
-  .image {
-    flex: 0 0 auto;
-
-    img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 2px dotted $primary;
-    }
+.blog_ck_editor {
+  h2 {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
   }
 
-  .text {
-    .title {
+  h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  blockquote {
+    background-color: rgba(255, 56, 56, .1);
+    padding: 20px 53px 20px 20px;
+    margin: 30px 0;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-radius: 0 150px 150px 0;
+
+    .image {
+      flex: 0 0 auto;
+
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px dotted $primary;
+      }
+    }
+
+    h4 {
       color: $primary;
       @include font(20px, 400);
       line-height: 1.5em;
     }
   }
+
+  ul li {
+    margin-bottom: 12px;
+    color: $para;
+    display: flex;
+  }
+
+  ul li i {
+    margin-right: 14px;
+    color: $primary;
+    position: relative;
+    font-size: 15px;
+    top: 8px;
+  }
+
 }
 
 .blog-details .blog-details-main .text .blog-inner-title {
@@ -331,20 +360,6 @@
 .blog-details .blog-details-main .text .inner-content-image .image {
   border-radius: 10px;
   overflow: hidden;
-}
-
-.blog-details .blog-details-main .text .list-info li {
-  margin-bottom: 12px;
-  color: $para;
-  display: flex;
-}
-
-.blog-details .blog-details-main .text .list-info li i {
-  margin-right: 14px;
-  color: $primary;
-  position: relative;
-  font-size: 15px;
-  top: 8px;
 }
 
 .blog-details .blog-details-main .text .tags-and-share {

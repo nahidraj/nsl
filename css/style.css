@@ -3195,7 +3195,18 @@ p {
   margin-bottom: 20px;
 }
 
-.blog-details .blog-details-main .text blockquote {
+.blog_ck_editor h2 {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.blog_ck_editor h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.blog_ck_editor blockquote {
   background-color: rgba(255, 56, 56, 0.1);
   padding: 20px 53px 20px 20px;
   margin: 30px 0;
@@ -3204,20 +3215,32 @@ p {
   align-items: center;
   border-radius: 0 150px 150px 0;
 }
-.blog-details .blog-details-main .text blockquote .image {
+.blog_ck_editor blockquote .image {
   flex: 0 0 auto;
 }
-.blog-details .blog-details-main .text blockquote .image img {
+.blog_ck_editor blockquote .image img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   border: 2px dotted #e02626;
 }
-.blog-details .blog-details-main .text blockquote .text .title {
+.blog_ck_editor blockquote h4 {
   color: #e02626;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5em;
+}
+.blog_ck_editor ul li {
+  margin-bottom: 12px;
+  color: #4d515f;
+  display: flex;
+}
+.blog_ck_editor ul li i {
+  margin-right: 14px;
+  color: #e02626;
+  position: relative;
+  font-size: 15px;
+  top: 8px;
 }
 
 .blog-details .blog-details-main .text .blog-inner-title {
@@ -3233,20 +3256,6 @@ p {
 .blog-details .blog-details-main .text .inner-content-image .image {
   border-radius: 10px;
   overflow: hidden;
-}
-
-.blog-details .blog-details-main .text .list-info li {
-  margin-bottom: 12px;
-  color: #4d515f;
-  display: flex;
-}
-
-.blog-details .blog-details-main .text .list-info li i {
-  margin-right: 14px;
-  color: #e02626;
-  position: relative;
-  font-size: 15px;
-  top: 8px;
 }
 
 .blog-details .blog-details-main .text .tags-and-share {
