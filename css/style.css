@@ -2467,44 +2467,41 @@ p {
   overflow: hidden;
   border-radius: 10px;
 }
-.project_details_area .project_text .title {
+.project_details_area .blog_ck_editor .title {
   font-size: 40px;
   font-weight: 500;
 }
-.project_details_area .project_text p {
+.project_details_area .blog_ck_editor p {
   margin-top: 24px;
   text-align: justify;
 }
-.project_details_area .project_text .inner_title {
+.project_details_area .blog_ck_editor .inner_title {
   font-size: 28px;
   font-weight: 500;
   margin-top: 30px;
 }
-.project_details_area .project_text .solutions {
-  margin-top: 30px;
-}
-.project_details_area .project_text .solutions .solutions_info li {
+.project_details_area .blog_ck_editor ul li {
   color: #4d515f;
   font-size: 18px;
   font-weight: 400;
   position: relative;
   padding-left: 30px;
 }
-.project_details_area .project_text .solutions .solutions_info li::before {
+.project_details_area .blog_ck_editor ul li::before {
   font-family: "Font Awesome 5 Free";
   content: "\f058";
   left: 0px;
   position: absolute;
   color: #e02626;
 }
-.project_details_area .project_text .solutions .solutions_info li + li {
+.project_details_area .blog_ck_editor ul li + li {
   margin-top: 10px;
 }
-.project_details_area .project_text .solutions_image {
+.project_details_area .blog_ck_editor .solutions_image {
   overflow: hidden;
   border-radius: 10px;
 }
-.project_details_area .project_text .solutions_image img {
+.project_details_area .blog_ck_editor .solutions_image img {
   border-radius: 10px;
 }
 .project_details_area .client_information {
@@ -2670,44 +2667,41 @@ p {
   overflow: hidden;
   border-radius: 10px;
 }
-.project_details_area .project_text .title {
+.project_details_area .blog_ck_editor .title {
   font-size: 40px;
   font-weight: 500;
 }
-.project_details_area .project_text p {
+.project_details_area .blog_ck_editor p {
   margin-top: 24px;
   text-align: justify;
 }
-.project_details_area .project_text .inner_title {
+.project_details_area .blog_ck_editor .inner_title {
   font-size: 28px;
   font-weight: 500;
   margin-top: 30px;
 }
-.project_details_area .project_text .solutions {
-  margin-top: 30px;
-}
-.project_details_area .project_text .solutions .solutions_info li {
+.project_details_area .blog_ck_editor ul li {
   color: #4d515f;
   font-size: 18px;
   font-weight: 400;
   position: relative;
   padding-left: 30px;
 }
-.project_details_area .project_text .solutions .solutions_info li::before {
+.project_details_area .blog_ck_editor ul li::before {
   font-family: "Font Awesome 5 Free";
   content: "\f058";
   left: 0px;
   position: absolute;
   color: #e02626;
 }
-.project_details_area .project_text .solutions .solutions_info li + li {
+.project_details_area .blog_ck_editor ul li + li {
   margin-top: 10px;
 }
-.project_details_area .project_text .solutions_image {
+.project_details_area .blog_ck_editor .solutions_image {
   overflow: hidden;
   border-radius: 10px;
 }
-.project_details_area .project_text .solutions_image img {
+.project_details_area .blog_ck_editor .solutions_image img {
   border-radius: 10px;
 }
 .project_details_area .client_information {
