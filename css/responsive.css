@@ -172,6 +172,12 @@
   .nogor_life_area .nogor_life_main .life_item .image .text {
     margin-bottom: -101px;
   }
+  .our_projects .projects_main .projects_single_item .text .title {
+    font-size: 34px;
+  }
+  .our_projects .projects_main .projects_single_item .text .title {
+    margin-top: 0px;
+  }
 }
 @media (max-width: 1199.98px) {
   .banner_area .banner_image_slider {
@@ -244,6 +250,7 @@
   }
   p {
     font-size: 16px;
+    line-height: 24px;
   }
   .contact_us_area .contact_bg .contact_info .icon {
     height: 65px;
@@ -468,6 +475,57 @@
   }
   .blog-details .blog-details-main .text .blog-inner-title {
     font-size: 23px;
+  }
+  .projects_single_item:nth-child(even) .project_wrapper {
+    flex-direction: unset !important;
+  }
+  .projects_single_item:nth-child(even) .image .cate {
+    right: 0 !important;
+  }
+  .projects_single_item:nth-child(even) .text {
+    text-align: left;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .projects_single_item:nth-child(even) .text .star {
+    flex-direction: unset !important;
+    display: none !important;
+  }
+  .projects_single_item .star {
+    flex-direction: unset !important;
+    display: none !important;
+  }
+  .projects_single_item .image .cate {
+    top: unset !important;
+    bottom: 0;
+    right: 0;
+    left: 20px;
+  }
+  .projects_single_item .text {
+    padding-left: 0 !important;
+    padding-top: 30px;
+  }
+  .our_projects .projects_main .projects_single_item .image .cate {
+    right: unset;
+    bottom: 20px;
+  }
+  .our_projects .projects_main .projects_single_item:nth-child(2n) .image .cate {
+    right: unset !important;
+    left: 20px;
+  }
+  .our_projects .projects_main .projects_single_item:nth-child(2n) .image .cate {
+    border-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 8px 30px;
+    padding-right: 30px !important;
+    padding-left: 20px;
+  }
+  .our_projects .projects_main .projects_single_item .image .cate {
+    border-radius: 40px;
+  }
+  .our_projects .projects_main .projects_single_item:nth-child(2n) .text {
+    text-align: left;
   }
 }
 @media (max-width: 767.98px) {
@@ -801,6 +859,17 @@
   .blog-details .blog-details-main .text .social ul {
     text-align: center;
     display: none;
+  }
+  .projects_single_item .text {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .our_projects .projects_main .projects_single_item .text .title {
+    font-size: 27px;
+    margin-bottom: 8px;
+  }
+  .our_projects .projects_main .projects_single_item:nth-child(2n) .text {
+    text-align: center;
   }
 }
 

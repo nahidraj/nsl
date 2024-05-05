@@ -1203,69 +1203,86 @@ p {
   }
 }
 .our_projects {
-  background-color: #00071a;
   margin-top: 144px;
-  padding: 80px 0;
 }
-.our_projects .projects_main .projects_sorting:nth-child(even) {
-  margin-top: 58px;
+.our_projects .projects_main .projects_single_item + .projects_single_item {
+  margin-top: 40px;
 }
-.our_projects .projects_main .projects_image {
+.our_projects .projects_main .projects_single_item .image {
+  border-radius: 15px;
   position: relative;
 }
-.our_projects .projects_main .projects_image .image {
-  overflow: hidden;
+.our_projects .projects_main .projects_single_item .image img {
+  border-radius: 15px;
+}
+.our_projects .projects_main .projects_single_item .image .cate {
+  background-color: #e02626;
+  color: #ffffff;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border: 2px solid #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 30px;
+  padding-left: 20px;
+  position: absolute;
+  top: 24px;
+  right: -34px;
+}
+.our_projects .projects_main .projects_single_item .image .cate svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
   position: relative;
+  top: -1px;
 }
-.our_projects .projects_main .projects_image .image img {
-  aspect-ratio: 16/22;
-  overflow: hidden;
-  object-fit: cover;
+.our_projects .projects_main .projects_single_item .text {
+  padding-left: 50px;
 }
-.our_projects .projects_main .projects_image .image img:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: 100%;
-  transition: 0.6s;
-  background-size: cover;
-}
-.our_projects .projects_main .projects_image .image:hover img:first-child {
-  transform: translateY(0) scaleY(1);
-  opacity: 1;
-  -webkit-filter: blur(0);
-  filter: blur(0);
-}
-.our_projects .projects_main .projects_image .image:hover img:nth-child(2) {
-  transform: translateY(50%) scaleY(2);
-  opacity: 0;
-  -webkit-filter: blur(10px);
-  filter: blur(10px);
-}
-.our_projects .projects_main .projects_text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 30px;
-  background-image: linear-gradient(rgba(0, 7, 26, 0), rgba(0, 7, 26, 0.5));
-}
-.our_projects .projects_main .projects_text .projects_title {
+.our_projects .projects_main .projects_single_item .text .title {
   font-size: 42px;
   font-weight: 600;
-}
-.our_projects .projects_main .projects_text .projects_subtitle {
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 0;
-  margin-top: 5px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #00071a;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.our_projects .projects_main .projects_single_item .text .star {
+  margin-top: 12px;
+}
+.our_projects .projects_main .projects_single_item .text .star .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e02626;
+  margin-right: -10px;
+  margin-top: -1px;
+}
+.our_projects .projects_main .projects_single_item:nth-child(even) .project_wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.our_projects .projects_main .projects_single_item:nth-child(even) .image .cate {
+  border-radius: 40px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 8px 30px;
+  padding-right: 20px;
+  padding-left: 30px;
+  right: unset;
+  left: -34px;
+}
+.our_projects .projects_main .projects_single_item:nth-child(even) .text {
+  padding-left: 0;
+  padding-right: 50px;
+  text-align: right;
+}
+.our_projects .projects_main .projects_single_item:nth-child(even) .text .star {
+  flex-direction: row-reverse;
+}
+.our_projects .projects_main .projects_single_item:nth-child(even) .text .star .line {
+  margin-right: 0;
+  margin-left: -10px;
 }
 
 .service_area {
@@ -2377,7 +2394,6 @@ p {
   border-radius: 10px;
 }
 .projects_area .portfolio-item .image img {
-  aspect-ratio: 16/15;
   overflow: hidden;
   object-fit: cover;
 }
@@ -2404,18 +2420,18 @@ p {
 }
 .projects_area .portfolio-item .image .read_more_btn {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 15px;
+  right: 15px;
   background-color: #ffffff;
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   color: #00071a;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 17px;
+  font-size: 14px;
 }
 .projects_area .portfolio-item .image .read_more_btn:hover {
   background-color: #e02626;
