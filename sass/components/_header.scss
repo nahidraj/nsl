@@ -1,6 +1,68 @@
 @import "../variable/variable";
 @import "../mixin/font";
 
+.fixed_btn_ {
+  @include font(14px, 500);
+  letter-spacing: 2px;
+  color: $white;
+  text-transform: uppercase;
+  transform: rotate(-90deg) translateY(-50%);
+  position: fixed;
+  top: 50%;
+  z-index: 99;
+
+  span {
+    position: relative;
+    top: 8px;
+    left: 27px;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -2px;
+  }
+}
+
+.btn_training {
+  right: -39px;
+
+  &::before {
+    position: absolute;
+    top: -72px;
+    right: 0;
+    background: url(../images/fixed_btn.png);
+    width: 40px;
+    height: 189px;
+    content: "";
+    transform: rotate(90deg);
+    z-index: -9;
+  }
+}
+
+.btn_career {
+  left: -31px;
+  transform: rotate(90deg) translateY(-50%);
+  top: 45%;
+  span{
+    transform: rotate(-180deg);
+  }
+
+  &::before {
+    position: absolute;
+    top: -72px;
+    right: 0;
+    background: url(../images/fixed_btn.png);
+    width: 40px;
+    height: 189px;
+    content: "";
+    transform: rotate(90deg);
+    z-index: -9;
+  }
+}
+
+
 .navbar {
   padding: 0;
 }
@@ -368,7 +430,7 @@
   transition: all linear 0.2s;
 }
 
-.mobile-menu-area .container{
+.mobile-menu-area .container {
   padding: 14px 45px;
 }
 
@@ -612,7 +674,7 @@
   margin-left: 8px;
 }
 
-.mobile-menu-area{
+.mobile-menu-area {
   .info_item {
     margin-bottom: 0;
     border-bottom: 1px solid $border;
@@ -631,6 +693,7 @@
 
   .info_item.contact {
     border-top: 1px solid $border;
+
     ul {
       li {
         display: flex;

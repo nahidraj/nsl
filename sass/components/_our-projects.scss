@@ -45,6 +45,9 @@
 
       .text {
         padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
 
         .title {
           @include font(42px, 600);
@@ -52,7 +55,7 @@
           color: $black;
           letter-spacing: 1px;
           margin-bottom: 20px;
-          margin-top: 30px;
+          margin-top: 5px;
         }
 
         .star {
@@ -66,6 +69,10 @@
             margin-top: -1px;
 
           }
+        }
+        .common_btn{
+          padding-top: 20px;
+          margin-top: auto !important;
         }
       }
 

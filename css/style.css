@@ -328,6 +328,64 @@ p {
   -webkit-box-orient: vertical;
 }
 
+.fixed_btn_ {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transform: rotate(-90deg) translateY(-50%);
+  position: fixed;
+  top: 50%;
+  z-index: 99;
+}
+.fixed_btn_ span {
+  position: relative;
+  top: 8px;
+  left: 27px;
+}
+.fixed_btn_ svg {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: -2px;
+}
+
+.btn_training {
+  right: -39px;
+}
+.btn_training::before {
+  position: absolute;
+  top: -72px;
+  right: 0;
+  background: url(../images/fixed_btn.png);
+  width: 40px;
+  height: 189px;
+  content: "";
+  transform: rotate(90deg);
+  z-index: -9;
+}
+
+.btn_career {
+  left: -31px;
+  transform: rotate(90deg) translateY(-50%);
+  top: 45%;
+}
+.btn_career span {
+  transform: rotate(-180deg);
+}
+.btn_career::before {
+  position: absolute;
+  top: -72px;
+  right: 0;
+  background: url(../images/fixed_btn.png);
+  width: 40px;
+  height: 189px;
+  content: "";
+  transform: rotate(90deg);
+  z-index: -9;
+}
+
 .navbar {
   padding: 0;
 }
@@ -1238,6 +1296,9 @@ p {
 }
 .our_projects .projects_main .projects_single_item .text {
   padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .our_projects .projects_main .projects_single_item .text .title {
   font-size: 42px;
@@ -1246,7 +1307,7 @@ p {
   color: #00071a;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 .our_projects .projects_main .projects_single_item .text .star {
   margin-top: 12px;
@@ -1257,6 +1318,10 @@ p {
   background-color: #e02626;
   margin-right: -10px;
   margin-top: -1px;
+}
+.our_projects .projects_main .projects_single_item .text .common_btn {
+  padding-top: 20px;
+  margin-top: auto !important;
 }
 .our_projects .projects_main .projects_single_item:nth-child(even) .project_wrapper {
   display: flex;
