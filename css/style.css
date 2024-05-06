@@ -329,9 +329,9 @@ p {
 }
 
 .fixed_btn_ {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #ffffff;
   text-transform: uppercase;
   transform: rotate(-90deg) translateY(-50%);
@@ -342,7 +342,7 @@ p {
 .fixed_btn_ span {
   position: relative;
   top: 8px;
-  left: 27px;
+  left: 35px;
 }
 .fixed_btn_ svg {
   width: 18px;
@@ -352,7 +352,7 @@ p {
 }
 
 .btn_training {
-  right: -39px;
+  right: -43px;
 }
 .btn_training::before {
   position: absolute;
@@ -367,12 +367,13 @@ p {
 }
 
 .btn_career {
-  left: -31px;
+  left: -39px;
   transform: rotate(90deg) translateY(-50%);
-  top: 45%;
+  top: 44%;
 }
 .btn_career span {
   transform: rotate(-180deg);
+  left: 28px;
 }
 .btn_career::before {
   position: absolute;

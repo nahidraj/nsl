@@ -2,8 +2,8 @@
 @import "../mixin/font";
 
 .fixed_btn_ {
-  @include font(14px, 500);
-  letter-spacing: 2px;
+  @include font(18px, 500);
+  letter-spacing: 1px;
   color: $white;
   text-transform: uppercase;
   transform: rotate(-90deg) translateY(-50%);
@@ -14,7 +14,7 @@
   span {
     position: relative;
     top: 8px;
-    left: 27px;
+    left: 35px;
   }
 
   svg {
@@ -26,7 +26,7 @@
 }
 
 .btn_training {
-  right: -39px;
+  right: -43px;
 
   &::before {
     position: absolute;
@@ -42,11 +42,12 @@
 }
 
 .btn_career {
-  left: -31px;
+  left: -39px;
   transform: rotate(90deg) translateY(-50%);
-  top: 45%;
+  top: 44%;
   span{
     transform: rotate(-180deg);
+    left: 28px;
   }
 
   &::before {
