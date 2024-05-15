@@ -11,7 +11,7 @@
 
   .banner_area .banner_text_slider {
     padding-top: 170px;
-    padding-bottom: 70px;
+    padding-bottom: 85px;
     padding-left: 85px;
   }
 
@@ -45,6 +45,53 @@
   }
 
   // clients area end
+  .banner_area .banner_social_icon {
+    display: none;
+  }
+
+  .header_area .navbar-nav .nav-item .sub_menu a {
+    font-size: 15px;
+    padding: 9px 24px;
+    line-height: 22px;
+  }
+
+  .header_area .navbar-nav .nav-item .nav-link::before {
+    bottom: 18px;
+  }
+
+  .banner_area .banner_text_slider {
+    padding-left: 24px;
+    padding-top: 160px;
+  }
+
+  .banner_area .banner_text_slider .info .title {
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 10px;
+  }
+
+  .banner_area .banner_text_slider .info .title {
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+
+  .banner_area .banner_text_slider .info .subtitle {
+    font-size: 16px;
+  }
+
+  .banner_area .banner_text_slider .info ul li {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+
+  .banner_area .banner_text_slider .info .banner_btn {
+    margin-top: 24px;
+  }
+
+  .banner_area .banner_text_slider .info ul {
+    margin-top: 24px;
+  }
 }
 
 @media (max-width:1399.98px) {
@@ -58,11 +105,12 @@
   }
 
   .header_area .navbar-nav .nav-item {
-    margin-left: 24px;
+    margin-left: 22px;
   }
 
   .header_area .navbar-nav .nav-item .nav-link {
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 72px;
   }
 
   .header_area .navbar-nav .nav-item .sub_menu {
@@ -73,11 +121,21 @@
     line-height: 24px;
   }
 
+  .header_area .navbar-nav .nav-item .sub_menu a {
+    font-size: 15px;
+    padding: 9px 24px;
+    line-height: 22px;
+  }
+
+  .header_area .navbar-nav .nav-item .nav-link::before {
+    bottom: 18px;
+  }
+
   // header area end
   // banner area start
   .banner_area .banner_image_slider {
     max-width: 610px;
-    height: 790px;
+    height: 590px;
 
     .slider_item {
       height: 790px;
@@ -94,22 +152,40 @@
     left: 2vw;
   }
 
+  .banner_area .banner_social_icon {
+    display: none;
+  }
+
   .banner_area .banner_text_slider .info {
     max-width: 450px;
   }
 
   .banner_area .banner_text_slider {
-    padding-left: 70px;
-    padding-top: 190px;
+    padding-left: 24px;
+    padding-top: 110px;
   }
 
   .banner_area .banner_text_slider .info .title {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 10px;
   }
 
   .banner_area .banner_text_slider .info .subtitle {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .banner_area .banner_text_slider .info ul li {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+
+  .banner_area .banner_text_slider .info .banner_btn {
+    margin-top: 24px;
+  }
+
+  .banner_area .banner_text_slider .info ul {
+    margin-top: 14px;
   }
 
   .play_video .watch {
@@ -263,6 +339,10 @@
 
   .our_projects .projects_main .projects_single_item .text .title {
     margin-top: 0px;
+  }
+
+  .header_area .navbar-brand img {
+    width: 160px !important;
   }
 }
 
