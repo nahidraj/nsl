@@ -23,6 +23,17 @@ $(function () {
     $(".menu_main_area").removeClass("active_menu_main_area");
   });
 
+  // rotate start gsap js
+  gsap.from(".star img", {
+    rotate: "360",
+    scrollTrigger: {
+      trigger: ".our_projects",
+      scroller: "body",
+      start: "top 50%",
+      scrub: 0.5,
+    },
+  });
+
   // section zoom js
   TweenLite.defaultEase = Linear.easeNone;
   var ctrl = new ScrollMagic.Controller();
