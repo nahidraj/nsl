@@ -34,6 +34,41 @@ $(function () {
     },
   });
 
+  
+// for sidebar menu timeline animation
+const header_control_bar = document.querySelector(".header_control_bar");
+const close_offcanvas = document.querySelector(".close_offcanvas");
+const menu_overlay = document.querySelector(".menu_overlay");
+
+let tl = gsap.timeline();
+tl.to(".menu_overlay", {
+  opacity:1,
+  left:0,
+  duration: 0.1,
+});
+tl.to(".menu_main_area", {
+  left:0,
+  opacity:1,
+  duration: 0.3,
+});
+// tl.from(".info_item", {
+//   opacity: 0,
+
+// });
+
+tl.pause();
+
+header_control_bar.addEventListener("click", function () {
+  tl.play();
+});
+
+close_offcanvas.addEventListener("click", function () {
+  tl.reverse();
+});
+menu_overlay.addEventListener("click", function () {
+  tl.reverse();
+});
+
   // section zoom js
   TweenLite.defaultEase = Linear.easeNone;
   var ctrl = new ScrollMagic.Controller();

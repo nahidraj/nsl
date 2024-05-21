@@ -552,7 +552,7 @@ p {
 
 .offcanvas_menu .menu_overlay {
   position: fixed;
-  left: 0;
+  left: -100%;
   top: 0;
   width: 100%;
   height: 100%;
@@ -560,9 +560,7 @@ p {
   background: rgba(4, 0, 23, 0.8);
   z-index: 9999;
   opacity: 0;
-  visibility: hidden;
   transition: all 0.4s ease-out 0s;
-  transform: scaleX(0);
   transform-origin: left;
 }
 .offcanvas_menu .menu_main_area {
@@ -578,7 +576,6 @@ p {
   background-color: #fff;
   left: -500px;
   opacity: 0;
-  visibility: hidden;
   transition: all 0.4s ease-out 0s;
 }
 .offcanvas_menu .menu_main_area .close_offcanvas {
@@ -658,18 +655,6 @@ p {
 }
 .offcanvas_menu .menu_main_area .info_item.contact ul li .text a:hover {
   color: #e02626;
-}
-
-.active_menu_overlay {
-  opacity: 1 !important;
-  visibility: visible !important;
-  transform: scaleX(1) !important;
-}
-
-.active_menu_main_area {
-  left: 0 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
 }
 
 .sticky-menu {
