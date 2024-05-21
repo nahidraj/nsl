@@ -564,7 +564,7 @@ $(function () {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: container,
-        toggleActions: "restart none none reset",
+        // toggleActions: "restart none none reset",
       },
     });
 
