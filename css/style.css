@@ -2621,7 +2621,7 @@ p {
   background-color: #ffffff;
   background-color: #f2f2f2;
   border-radius: 500px;
-  padding-top: 20px;
+  padding-top: 0;
   overflow: hidden;
 }
 .management_team .team_main .team_item .image::before {
