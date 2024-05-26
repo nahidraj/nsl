@@ -1,0 +1,60 @@
+.about_us_page .about_area .image {
+  float: left;
+  margin-right: 70px;
+  margin-bottom: 40px;
+}
+
+.about_us_page .about_area .image::before {
+  display: none;
+}
+
+.about_us_page .about_area .text p {
+  text-align: justify;
+}
+
+.about_us_page .about_area .text p+p {
+  margin-top: 24px;
+}
+
+.blog_area .bi-sidebar-widget .recent-post-widget .bi-recent-blog-item .bi-recent-blog-img {
+  flex: 0 0 auto;
+}
+
+.blog_area .bi-sidebar-widget .recent-post-widget .bi-recent-blog-item .bi-recent-blog-img img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog_area .bi-blog-feed-item-3 .blog-author-more .blog-author,
+.blog_area .bi-sidebar-widget .recent-post-widget .bi-recent-blog-item .bi-recent-blog-text {
+  max-width: 100%;
+}
+
+.project_text {
+  text-align: justify;
+}
+
+.projects_image {
+  position: sticky;
+  top: 120px;
+}
+
+@media (max-width:1199.98px) {
+  .about_us_page .about_area .image {
+    max-width: 426px;
+    margin-right: 40px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width:991.98px) {
+  .about_us_page .about_area .image {
+    max-width: 426px;
+    margin-right: 0;
+    margin-bottom: 0;
+    float: unset !important;
+    margin: auto !important;
+    margin-bottom: 40px !important;
+  }
+}
